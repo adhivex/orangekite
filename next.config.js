@@ -1,10 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Vercel-compatible build by default (next/image optimization enabled).
-  // To produce a fully static export instead (e.g. for static hosting other than Vercel),
-  // uncomment the two lines below — next/image will then serve unoptimized images.
-  // output: 'export',
-  // images: { unoptimized: true },
+  // Static export for Hostinger (or any plain static host) — no Node.js
+  // process required. Builds to the `out/` folder as plain HTML/CSS/JS.
+  // next/image can't run its optimization server without Node, so images
+  // are served unoptimized (still fine — they're small local assets).
+  output: 'export',
+  images: { unoptimized: true },
 };
 
 module.exports = nextConfig;

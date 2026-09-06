@@ -15,20 +15,18 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Before you launch
 
-1. **Add the logo files.** Drop `orangekite-icon_svg.png` and
-   `orangekite-logo_svg.png` into `public/assets/` (see
-   `public/assets/README.md`). These are referenced directly by the nav,
-   footer, and Open Graph tags.
-2. **Wire up the contact form.** [`components/Contact.tsx`](components/Contact.tsx)
+1. **Wire up the contact form.** [`components/Contact.tsx`](components/Contact.tsx)
    currently logs submissions to the browser console (see the `TODO` in
-   `handleSubmit`). Replace it with a real handler — a
-   [Formspree](https://formspree.io) endpoint, or a Next.js API route /
-   serverless function that emails or forwards the payload.
-3. **Swap in real content.** `lib/data.ts` holds the services list, stats,
+   `handleSubmit`). This is a static export (see [Deploying](#deploying)
+   below), so there's no built-in server to handle the submission — replace
+   it with a third-party form endpoint such as [Formspree](https://formspree.io)
+   or [Getform](https://getform.io), which work by just changing the `fetch`
+   target, no backend of your own required.
+2. **Swap in real content.** `lib/data.ts` holds the services list, stats,
    placeholder work/case-study items, and the "trusted by" logo row.
    `components/About.tsx` and `components/Testimonial.tsx` hold placeholder
    copy and a placeholder testimonial/attribution.
-4. **Add real social links.** `components/Footer.tsx` has a `TODO` next to
+3. **Add real social links.** `components/Footer.tsx` has a `TODO` next to
    the social icon URLs (currently `#`).
 
 ## Project structure
@@ -51,7 +49,9 @@ components/
   Footer.tsx       — logo, nav links, social icons, copyright
 lib/
   data.ts          — services, stats, work items, nav links, trusted-by list
-public/assets/     — logo images (see public/assets/README.md)
+public/assets/     — logo images, served as-is (deployed as static files)
+.assets-backup/    — original uncropped icon PNG, kept for reference only
+                     (not deployed — lives outside public/)
 ```
 
 ## Design decisions worth knowing
@@ -70,27 +70,46 @@ public/assets/     — logo images (see public/assets/README.md)
 
 ## Deploying
 
-### Vercel (recommended)
+This project is configured for **static export** (`output: 'export'` in
+[`next.config.js`](next.config.js)) — `npm run build` produces plain
+HTML/CSS/JS in `out/` with no Node.js process required to serve it. This is
+what makes it deployable to Hostinger shared/business hosting.
 
-This project builds out of the box on Vercel with zero config:
+### Hostinger (shared / business hosting)
+
+1. Build the static site locally:
+
+   ```bash
+   npm install
+   npm run build
+   ```
+
+2. This creates an `out/` folder containing `index.html`, `404.html`, and
+   the `_next/` and `assets/` subfolders. That folder's *contents* (not the
+   `out` folder itself) are what get uploaded.
+3. In hPanel, go to **Files → File Manager**, open `public_html/` for your
+   domain (or the relevant subdomain folder), clear out any default/placeholder
+   files (e.g. `default.php`), and upload everything from inside `out/` there
+   — either by dragging the files in through File Manager, or by zipping the
+   contents of `out/` (not the folder itself), uploading the zip, and using
+   File Manager's "Extract" option.
+4. Alternatively, use an FTP client (FileZilla, etc.) with the credentials
+   from hPanel → **Files → FTP Accounts**, and upload the contents of `out/`
+   to `public_html/`.
+5. Point `orangekite.in` at the hosting account's nameservers/DNS in
+   hPanel → **Domains**, if you haven't already.
+6. Re-run `npm run build` and re-upload the `out/` contents any time you
+   change the site — there's no CI/CD wired up, so this is a manual step
+   for now.
+
+### Vercel (alternative)
+
+The static export also deploys cleanly to Vercel with zero config, if you
+ever want CI/CD-on-push instead of manual uploads:
 
 ```bash
 npm i -g vercel
 vercel
 ```
 
-Or connect the repo at [vercel.com/new](https://vercel.com/new) and point
-your domain (`orangekite.in`) at the resulting deployment in your DNS/Vercel
-domain settings.
-
-### Static export (any static host)
-
-If you'd rather deploy to a plain static host (S3, Netlify static, etc.),
-uncomment the `output: 'export'` and `images.unoptimized` lines in
-[`next.config.js`](next.config.js), then:
-
-```bash
-npm run build
-```
-
-The static site will be output to `out/`.
+Or connect the repo at [vercel.com/new](https://vercel.com/new).
