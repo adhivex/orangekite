@@ -28,12 +28,12 @@ export default function Nav() {
           <Image
             src="/assets/orangekite-icon_updated.svg.png"
             alt=""
-            width={32}
-            height={32}
-            className="h-8 w-8"
+            width={36}
+            height={36}
+            className="h-9 w-9"
             priority
           />
-          <span className="text-lg font-semibold tracking-tight">
+          <span className="text-xl font-semibold tracking-tight">
             <span className="text-orange">Orange</span>
             <span className="text-fg">Kite</span>
           </span>

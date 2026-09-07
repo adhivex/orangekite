@@ -18,11 +18,11 @@ export default function Footer() {
             <Image
               src="/assets/orangekite-icon_updated.svg.png"
               alt=""
-              width={28}
-              height={28}
-              className="h-7 w-7"
+              width={32}
+              height={32}
+              className="h-8 w-8"
             />
-            <span className="text-base font-semibold tracking-tight">
+            <span className="text-lg font-semibold tracking-tight">
               <span className="text-orange">Orange</span>
               <span className="text-fg">Kite</span>
             </span>
