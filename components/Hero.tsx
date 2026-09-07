@@ -18,15 +18,12 @@ export default function Hero() {
           </div>
 
           <h1 className="text-4xl font-semibold leading-[1.08] tracking-tighter text-fg sm:text-5xl lg:text-6xl">
-            Software that ships fast,
-            <br />
-            and works even faster.
+            Outthink. Outbuild. Outgrow.
           </h1>
 
           <p className="mt-6 max-w-xl text-balance text-base text-muted sm:text-lg">
-            OrangeKite designs and builds websites, AI-driven automation, and
-            analytics systems for teams who need to move quicker than their
-            competition.
+            Software, AI and data solutions designed to create real business
+            momentum.
           </p>
 
           <div className="mt-9 flex flex-col items-center gap-3 sm:flex-row">
