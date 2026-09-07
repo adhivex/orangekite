@@ -24,9 +24,9 @@ export default function Nav() {
       }`}
     >
       <nav className="section-x flex h-16 items-center justify-between sm:h-20">
-        <a href="#" className="flex items-center gap-1.5" aria-label="OrangeKite home">
+        <a href="#" className="flex items-center gap-0.5" aria-label="OrangeKite home">
           <Image
-            src="/assets/orangekite-icon_svg.png"
+            src="/assets/orangekite-icon_updated.svg.png"
             alt=""
             width={32}
             height={32}

@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     siteName: "OrangeKite",
     images: [
       {
-        url: "/assets/orangekite-logo_svg.png",
+        url: "/assets/orangekite-logo_updated.svg.png",
         width: 1200,
         height: 630,
         alt: "OrangeKite",
@@ -51,10 +51,10 @@ export const metadata: Metadata = {
     title: "OrangeKite — Websites, AI automation & data analytics",
     description:
       "OrangeKite builds fast websites, custom AI automation, and data analytics that help modern teams launch faster and make better decisions.",
-    images: ["/assets/orangekite-logo_svg.png"],
+    images: ["/assets/orangekite-logo_updated.svg.png"],
   },
   icons: {
-    icon: "/assets/orangekite-icon_svg.png",
+    icon: "/assets/orangekite-icon_updated.svg.png",
   },
 };
 

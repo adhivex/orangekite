@@ -14,9 +14,9 @@ export default function Footer() {
     <footer className="border-t border-border">
       <div className="section-x flex flex-col gap-10 py-14 sm:flex-row sm:items-start sm:justify-between">
         <div className="flex flex-col gap-4">
-          <a href="#" className="flex items-center gap-1.5" aria-label="OrangeKite home">
+          <a href="#" className="flex items-center gap-0.5" aria-label="OrangeKite home">
             <Image
-              src="/assets/orangekite-icon_svg.png"
+              src="/assets/orangekite-icon_updated.svg.png"
               alt=""
               width={28}
               height={28}
