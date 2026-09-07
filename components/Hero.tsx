@@ -1,5 +1,3 @@
-import { trustedBy } from "@/lib/data";
-
 export default function Hero() {
   return (
     <section className="relative overflow-hidden">
@@ -39,22 +37,6 @@ export default function Hero() {
             >
               See our work
             </a>
-          </div>
-        </div>
-
-        <div className="mx-auto mt-20 max-w-3xl">
-          <p className="text-center text-xs uppercase tracking-tight text-muted">
-            Trusted by teams at
-          </p>
-          <div className="mt-5 flex flex-wrap items-center justify-center gap-x-10 gap-y-3">
-            {trustedBy.map((name) => (
-              <span
-                key={name}
-                className="text-sm font-medium text-muted/70"
-              >
-                {name}
-              </span>
-            ))}
           </div>
         </div>
       </div>

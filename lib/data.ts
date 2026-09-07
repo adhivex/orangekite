@@ -62,5 +62,3 @@ export const workItems: WorkItem[] = [
     result: "Unified 5 data sources into one live pipeline for weekly planning.",
   },
 ];
-
-export const trustedBy = ["Northwind", "Vesper", "Cobalt Labs", "Fernwood", "Haldis"];
