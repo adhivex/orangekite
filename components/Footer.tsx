@@ -34,12 +34,12 @@ export default function Footer() {
         </div>
 
         <nav aria-label="Footer">
-          <ul className="flex flex-col gap-3 sm:flex-row sm:gap-8">
+          <ul className="flex flex-col sm:flex-row sm:gap-8">
             {navLinks.map((link) => (
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className="text-sm font-medium text-muted transition-colors hover:text-fg"
+                  className="flex min-h-11 items-center text-sm font-medium text-muted transition-colors hover:text-fg sm:inline sm:min-h-0"
                 >
                   {link.label}
                 </a>
@@ -54,7 +54,7 @@ export default function Footer() {
               key={label}
               href={href}
               aria-label={label}
-              className="flex h-9 w-9 items-center justify-center rounded-md border border-border text-muted transition-colors hover:border-border-strong hover:text-fg"
+              className="flex h-11 w-11 items-center justify-center rounded-md border border-border text-muted transition-colors hover:border-border-strong hover:text-fg sm:h-9 sm:w-9"
             >
               <Icon size={16} strokeWidth={1.75} aria-hidden="true" />
             </a>

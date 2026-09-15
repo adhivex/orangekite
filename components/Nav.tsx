@@ -63,7 +63,7 @@ export default function Nav() {
 
         <button
           type="button"
-          className="flex h-10 w-10 items-center justify-center rounded-md border border-border text-fg md:hidden"
+          className="flex h-11 w-11 items-center justify-center rounded-md border border-border text-fg md:hidden"
           aria-label={open ? "Close menu" : "Open menu"}
           aria-expanded={open}
           onClick={() => setOpen((v) => !v)}

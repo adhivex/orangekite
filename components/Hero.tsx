@@ -12,7 +12,7 @@ export default function Hero() {
           </h1>
 
           <p className="mt-6 max-w-xl text-balance text-base leading-relaxed text-muted sm:text-lg">
-            Software, AI and data solutions designed to create real business
+            Software, AI, and data solutions designed to create real business
             momentum.
           </p>
 

@@ -45,14 +45,13 @@ export default function Contact() {
             </h2>
             <p className="mt-4 text-fg/80">
               Whether it&rsquo;s a new site, an automation idea, or a data
-              problem you can&rsquo;t see through — tell us about it. We reply
-              within one business day.
+              problem you can&rsquo;t see through — tell us about it.
             </p>
 
             <div className="mt-8 flex flex-col gap-4">
               <a
                 href="mailto:hello@orangekite.in"
-                className="flex items-center gap-3 text-sm text-fg transition-colors hover:text-orange"
+                className="flex min-h-11 items-center gap-3 text-sm text-fg transition-colors hover:text-orange sm:min-h-0"
               >
                 <Mail size={18} strokeWidth={1.75} className="text-orange" />
                 hello@orangekite.in
