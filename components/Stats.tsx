@@ -9,7 +9,7 @@ export default function Stats() {
             key={stat.label}
             className="flex flex-col items-center gap-1.5 border-r border-border px-4 py-10 text-center sm:py-14"
           >
-            <span className="text-3xl font-semibold tracking-tighter text-fg sm:text-4xl">
+            <span className="text-3xl font-bold tracking-tighter text-fg sm:text-4xl">
               {stat.value}
             </span>
             <span className="text-xs text-muted sm:text-sm">{stat.label}</span>

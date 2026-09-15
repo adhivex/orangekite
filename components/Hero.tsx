@@ -7,19 +7,11 @@ export default function Hero() {
       />
       <div className="section-x relative py-20 sm:py-28 lg:py-32">
         <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
-          <div className="mb-8 inline-flex flex-wrap items-center justify-center gap-x-2 gap-y-1 rounded-full border border-border-strong bg-white/[0.03] px-4 py-2 text-xs text-muted">
-            <span>Websites</span>
-            <span className="text-orange">·</span>
-            <span>AI automation</span>
-            <span className="text-orange">·</span>
-            <span>Data analytics</span>
-          </div>
-
-          <h1 className="text-4xl font-semibold leading-[1.08] tracking-tighter text-fg sm:text-5xl lg:text-6xl">
+          <h1 className="text-4xl font-extrabold leading-[1.05] tracking-tighter text-fg sm:text-5xl md:text-[3.5rem] lg:text-6xl">
             Outthink. Outbuild. Outgrow.
           </h1>
 
-          <p className="mt-6 max-w-xl text-balance text-base text-muted sm:text-lg">
+          <p className="mt-6 max-w-xl text-balance text-base leading-relaxed text-muted sm:text-lg">
             Software, AI and data solutions designed to create real business
             momentum.
           </p>

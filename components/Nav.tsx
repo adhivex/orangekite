@@ -44,7 +44,7 @@ export default function Nav() {
             <li key={link.href}>
               <a
                 href={link.href}
-                className="text-sm text-muted transition-colors hover:text-fg"
+                className="text-sm font-medium text-muted transition-colors hover:text-fg"
               >
                 {link.label}
               </a>
@@ -96,7 +96,7 @@ export default function Nav() {
                 <a
                   href={link.href}
                   onClick={() => setOpen(false)}
-                  className="block rounded-md px-2 py-3 text-base text-fg hover:bg-white/[0.03]"
+                  className="block rounded-md px-2 py-3 text-base font-medium text-fg hover:bg-white/[0.03]"
                 >
                   {link.label}
                 </a>

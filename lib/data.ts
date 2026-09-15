@@ -42,23 +42,22 @@ export type WorkItem = {
   tag: string;
   title: string;
   result: string;
+  href: string;
 };
 
-// TODO: Replace these placeholder case studies with real client projects once available.
 export const workItems: WorkItem[] = [
   {
     tag: "Website design & development",
-    title: "Fintech onboarding rebuild",
-    result: "Cut signup drop-off by 31% with a redesigned, faster flow.",
+    title: "Sai Jagannath Engineering & Construction",
+    result:
+      "Corporate site for an industrial electrical and instrumentation contractor, with a filterable portfolio of cement, steel and pellet plant projects.",
+    href: "https://sjec.in",
   },
   {
-    tag: "AI automation",
-    title: "Support ticket triage system",
-    result: "Automated 60% of first-response routing, saving 20+ hrs/week.",
-  },
-  {
-    tag: "Data analytics",
-    title: "Retail demand dashboard",
-    result: "Unified 5 data sources into one live pipeline for weekly planning.",
+    tag: "Website design & development",
+    title: "Routray Naturals",
+    result:
+      "Direct-to-consumer storefront for dry fruits and whole spices, with a product catalogue, cart and a separate bulk and wholesale channel.",
+    href: "https://routraynaturals.in",
   },
 ];

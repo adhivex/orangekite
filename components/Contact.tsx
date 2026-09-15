@@ -27,14 +27,23 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="border-t border-border">
+    <section
+      id="contact"
+      className="relative isolate overflow-hidden border-t border-border"
+    >
+      <div
+        className="absolute inset-0 -z-10 bg-[url('/assets/background_footer_orangekite.png')] bg-cover bg-[center_72%]"
+        aria-hidden="true"
+      />
+      <div className="absolute inset-0 -z-10 bg-section-scrim" aria-hidden="true" />
+
       <div className="section-x py-20 sm:py-28">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-5 lg:gap-16">
           <div className="lg:col-span-2">
-            <h2 className="text-3xl font-semibold tracking-tighter text-fg sm:text-4xl">
+            <h2 className="text-3xl font-bold tracking-tighter text-fg sm:text-4xl">
               Let&rsquo;s talk
             </h2>
-            <p className="mt-4 text-muted">
+            <p className="mt-4 text-fg/80">
               Whether it&rsquo;s a new site, an automation idea, or a data
               problem you can&rsquo;t see through — tell us about it.
             </p>
@@ -47,7 +56,7 @@ export default function Contact() {
                 <Mail size={18} strokeWidth={1.75} className="text-orange" />
                 hello@orangekite.in
               </a>
-              <div className="flex items-center gap-3 text-sm text-muted">
+              <div className="flex items-center gap-3 text-sm text-fg/80">
                 <MapPin size={18} strokeWidth={1.75} className="text-orange" />
                 Remote-first, working with teams worldwide
               </div>
@@ -60,7 +69,7 @@ export default function Contact() {
           >
             <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
               <div className="flex flex-col gap-2">
-                <label htmlFor="name" className="text-sm text-muted">
+                <label htmlFor="name" className="text-sm font-medium text-fg/80">
                   Name
                 </label>
                 <input
@@ -68,12 +77,12 @@ export default function Contact() {
                   name="name"
                   type="text"
                   required
-                  className="rounded-md border border-border-strong bg-transparent px-4 py-3 text-sm text-fg outline-none transition-colors placeholder:text-muted/60 focus:border-orange"
+                  className="rounded-md border border-border-strong bg-bg/60 px-4 py-3 text-sm text-fg outline-none transition-colors placeholder:text-muted focus:border-orange"
                   placeholder="Jane Doe"
                 />
               </div>
               <div className="flex flex-col gap-2">
-                <label htmlFor="email" className="text-sm text-muted">
+                <label htmlFor="email" className="text-sm font-medium text-fg/80">
                   Email
                 </label>
                 <input
@@ -81,14 +90,14 @@ export default function Contact() {
                   name="email"
                   type="email"
                   required
-                  className="rounded-md border border-border-strong bg-transparent px-4 py-3 text-sm text-fg outline-none transition-colors placeholder:text-muted/60 focus:border-orange"
+                  className="rounded-md border border-border-strong bg-bg/60 px-4 py-3 text-sm text-fg outline-none transition-colors placeholder:text-muted focus:border-orange"
                   placeholder="jane@company.com"
                 />
               </div>
             </div>
 
             <div className="flex flex-col gap-2">
-              <label htmlFor="message" className="text-sm text-muted">
+              <label htmlFor="message" className="text-sm font-medium text-fg/80">
                 Message
               </label>
               <textarea
@@ -96,7 +105,7 @@ export default function Contact() {
                 name="message"
                 required
                 rows={5}
-                className="resize-none rounded-md border border-border-strong bg-transparent px-4 py-3 text-sm text-fg outline-none transition-colors placeholder:text-muted/60 focus:border-orange"
+                className="resize-none rounded-md border border-border-strong bg-bg/60 px-4 py-3 text-sm text-fg outline-none transition-colors placeholder:text-muted focus:border-orange"
                 placeholder="Tell us a bit about your project..."
               />
             </div>
@@ -109,7 +118,7 @@ export default function Contact() {
                 Send message
               </button>
               {status === "sent" && (
-                <span role="status" className="text-sm text-muted">
+                <span role="status" className="text-sm text-fg/80">
                   Thanks — we&rsquo;ll be in touch soon.
                 </span>
               )}

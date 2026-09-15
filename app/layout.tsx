@@ -1,19 +1,6 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { GeistSans } from "geist/font/sans";
 import "./globals.css";
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
-});
-
-const editorial = Playfair_Display({
-  subsets: ["latin"],
-  style: ["italic"],
-  variable: "--font-editorial",
-  display: "swap",
-});
 
 const siteUrl = "https://orangekite.in";
 
@@ -64,7 +51,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${editorial.variable}`}>
+    <html lang="en" className={GeistSans.variable}>
       <body className="font-sans antialiased">{children}</body>
     </html>
   );

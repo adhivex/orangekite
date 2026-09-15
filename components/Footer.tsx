@@ -27,7 +27,7 @@ export default function Footer() {
               <span className="text-fg">Kite</span>
             </span>
           </a>
-          <p className="max-w-xs text-sm text-muted">
+          <p className="max-w-xs text-sm leading-relaxed text-muted">
             Websites, AI automation, and data analytics for teams that move
             fast.
           </p>
@@ -39,7 +39,7 @@ export default function Footer() {
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className="text-sm text-muted transition-colors hover:text-fg"
+                  className="text-sm font-medium text-muted transition-colors hover:text-fg"
                 >
                   {link.label}
                 </a>

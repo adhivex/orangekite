@@ -3,7 +3,7 @@ export default function About() {
     <section id="about" className="border-t border-border">
       <div className="section-x py-20 sm:py-28">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-semibold tracking-tighter text-fg sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tighter text-fg sm:text-4xl">
             Small team, wide range, no handoffs.
           </h2>
           <p className="mt-6 text-base leading-relaxed text-muted sm:text-lg">
