@@ -4,6 +4,14 @@
 
 html {
   scroll-behavior: smooth;
+  /* Offset anchor jumps by the sticky header height (h-16 / sm:h-20). */
+  scroll-padding-top: 4rem;
+}
+
+@media (min-width: 640px) {
+  html {
+    scroll-padding-top: 5rem;
+  }
 }
 
 body {

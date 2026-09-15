@@ -57,7 +57,7 @@ export default function Nav() {
             href="#contact"
             className="inline-flex items-center rounded-md bg-orange px-4 py-2.5 text-sm font-medium text-white transition-opacity hover:opacity-90"
           >
-            Book a call
+            Get Started
           </a>
         </div>
 
@@ -108,7 +108,7 @@ export default function Nav() {
                 onClick={() => setOpen(false)}
                 className="inline-flex w-full items-center justify-center rounded-md bg-orange px-4 py-3 text-sm font-medium text-white"
               >
-                Book a call
+                Get Started
               </a>
             </li>
           </ul>

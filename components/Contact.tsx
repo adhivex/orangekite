@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
-import { Mail, MapPin } from "lucide-react";
+import { Clock, Mail, MapPin } from "lucide-react";
 
 export default function Contact() {
   const [status, setStatus] = useState<"idle" | "sent">("idle");
@@ -32,20 +32,21 @@ export default function Contact() {
       className="relative isolate overflow-hidden border-t border-border"
     >
       <div
-        className="absolute inset-0 -z-10 bg-[url('/assets/background_footer_orangekite.png')] bg-cover bg-[center_72%]"
+        className="absolute inset-0 -z-10 bg-[url('/assets/background_footer_orangekite.png')] bg-cover bg-top"
         aria-hidden="true"
       />
       <div className="absolute inset-0 -z-10 bg-section-scrim" aria-hidden="true" />
 
-      <div className="section-x py-20 sm:py-28">
+      <div className="section-x py-20 sm:py-28 lg:pt-40">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-5 lg:gap-16">
           <div className="lg:col-span-2">
             <h2 className="text-3xl font-bold tracking-tighter text-fg sm:text-4xl">
-              Let&rsquo;s talk
+              Have a project in mind?
             </h2>
             <p className="mt-4 text-fg/80">
               Whether it&rsquo;s a new site, an automation idea, or a data
-              problem you can&rsquo;t see through — tell us about it.
+              problem you can&rsquo;t see through — tell us about it. We reply
+              within one business day.
             </p>
 
             <div className="mt-8 flex flex-col gap-4">
@@ -56,6 +57,10 @@ export default function Contact() {
                 <Mail size={18} strokeWidth={1.75} className="text-orange" />
                 hello@orangekite.in
               </a>
+              <div className="flex items-center gap-3 text-sm text-fg/80">
+                <Clock size={18} strokeWidth={1.75} className="text-orange" />
+                Replies within one business day
+              </div>
               <div className="flex items-center gap-3 text-sm text-fg/80">
                 <MapPin size={18} strokeWidth={1.75} className="text-orange" />
                 Remote-first, working with teams worldwide
@@ -115,7 +120,7 @@ export default function Contact() {
                 type="submit"
                 className="inline-flex items-center justify-center rounded-md bg-orange px-6 py-3 text-sm font-medium text-white transition-opacity hover:opacity-90"
               >
-                Send message
+                Start a project
               </button>
               {status === "sent" && (
                 <span role="status" className="text-sm text-fg/80">
