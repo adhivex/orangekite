@@ -6,7 +6,7 @@ const siteUrl = "https://orangekite.in";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "OrangeKite — Websites, AI automation & data analytics",
+  title: "OrangeKite",
   description:
     "OrangeKite builds fast websites, custom AI automation, and data analytics that help modern teams launch faster and make better decisions.",
   keywords: [

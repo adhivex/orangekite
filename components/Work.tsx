@@ -13,7 +13,7 @@ export default function Work() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {workItems.map((item) => (
           <a
             key={item.title}
@@ -24,13 +24,13 @@ export default function Work() {
           >
             <div className="flex aspect-[16/9] items-center justify-center border-b border-border bg-bg-elevated">
               <ArrowUpRight
-                size={28}
+                size={24}
                 strokeWidth={1.5}
                 className="text-muted/40 transition-colors group-hover:text-orange"
                 aria-hidden="true"
               />
             </div>
-            <div className="flex flex-1 flex-col gap-2.5 p-6">
+            <div className="flex flex-1 flex-col gap-2 p-5">
               <span className="text-xs font-medium uppercase tracking-tight text-orange">
                 {item.tag}
               </span>
