@@ -1,19 +1,27 @@
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden">
+    <section className="relative isolate overflow-hidden">
+      {/*
+        The plate ships as a blue night scene; the contact section's artwork is
+        a warm amber night. Sepia carries the blue over to amber and the extra
+        saturation keeps it rich rather than muddy, so both sections read as
+        the same evening.
+      */}
       <div
-        className="pointer-events-none absolute inset-0 bg-grid bg-grid opacity-40 [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,black,transparent)]"
+        className="absolute inset-0 -z-10 bg-[url('/assets/hero-valley.webp')] bg-cover bg-center [filter:brightness(0.82)_sepia(0.92)_saturate(1.75)_hue-rotate(-14deg)_contrast(1.06)]"
         aria-hidden="true"
       />
-      <div className="section-x relative py-20 sm:py-28 lg:py-32">
+      <div className="absolute inset-0 -z-10 bg-hero-scrim" aria-hidden="true" />
+
+      <div className="section-x relative py-24 sm:py-32 lg:py-40">
         <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
           <h1 className="text-4xl font-extrabold leading-[1.05] tracking-tighter text-fg sm:text-5xl md:text-[3.5rem] lg:text-6xl">
             Websites crafted,
             <br />
-            not templated.
+            <span className="text-orange">not templated.</span>
           </h1>
 
-          <p className="mt-6 max-w-xl text-balance text-base leading-relaxed text-muted sm:text-lg">
+          <p className="mt-6 max-w-xl text-balance text-base leading-relaxed text-fg/75 sm:text-lg">
             Built to lift your brand higher.
           </p>
 

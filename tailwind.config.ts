@@ -46,6 +46,12 @@ const config: Config = {
         // 0.45–0.55 across the middle so the illustration reads clearly.
         "section-scrim":
           "linear-gradient(to bottom, #0b0c0e 0%, rgba(11,12,14,0.5) 6%, rgba(11,12,14,0.45) 50%, rgba(11,12,14,0.55) 85%, rgba(11,12,14,0.9) 100%)",
+        // Hero artwork sits behind centred text: a soft radial pool darkens the
+        // middle so the headline stays legible, while the vertical pass keeps
+        // the lantern-lit edges visible and lands on the page colour at the
+        // bottom so the section blends into what follows.
+        "hero-scrim":
+          "radial-gradient(ellipse 48% 34% at 50% 30%, rgba(11,12,14,0.55) 0%, rgba(11,12,14,0.18) 70%, rgba(11,12,14,0) 100%), linear-gradient(to bottom, rgba(11,12,14,0.4) 0%, rgba(11,12,14,0.12) 45%, rgba(11,12,14,0.3) 72%, rgba(11,12,14,0.8) 92%, #0b0c0e 100%)",
       },
       backgroundSize: {
         grid: "48px 48px",
