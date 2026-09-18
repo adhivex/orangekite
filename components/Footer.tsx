@@ -28,8 +28,7 @@ export default function Footer() {
             </span>
           </a>
           <p className="max-w-xs text-sm leading-relaxed text-muted">
-            Websites, AI automation, and data analytics for teams that move
-            fast.
+            Websites designed and built for teams that move fast.
           </p>
         </div>
 

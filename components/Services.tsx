@@ -8,8 +8,8 @@ export default function Services() {
           What we do
         </h2>
         <p className="mt-4 leading-relaxed text-muted">
-          Three focused disciplines, one team — so your website, your
-          workflows, and your data all move in the same direction.
+          One focus, one team — websites designed, built and shipped end to
+          end.
         </p>
       </div>
 

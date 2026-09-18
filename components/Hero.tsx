@@ -8,12 +8,13 @@ export default function Hero() {
       <div className="section-x relative py-20 sm:py-28 lg:py-32">
         <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
           <h1 className="text-4xl font-extrabold leading-[1.05] tracking-tighter text-fg sm:text-5xl md:text-[3.5rem] lg:text-6xl">
-            Outthink. Outbuild. Outgrow.
+            Websites crafted,
+            <br />
+            not templated.
           </h1>
 
           <p className="mt-6 max-w-xl text-balance text-base leading-relaxed text-muted sm:text-lg">
-            Software, AI, and data solutions designed to create real business
-            momentum.
+            Built to lift your brand higher.
           </p>
 
           <div className="mt-9 flex flex-col items-center gap-3 sm:flex-row">

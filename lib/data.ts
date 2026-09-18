@@ -1,4 +1,4 @@
-import { Code2, Bot, BarChart3, type LucideIcon } from "lucide-react";
+import { PenTool, Code2, Gauge, type LucideIcon } from "lucide-react";
 
 export type Service = {
   icon: LucideIcon;
@@ -8,34 +8,52 @@ export type Service = {
 
 export const services: Service[] = [
   {
+    icon: PenTool,
+    title: "Design & UX",
+    description:
+      "Brand-led layouts and page flows that make the next click obvious.",
+  },
+  {
     icon: Code2,
-    title: "Website design & development",
+    title: "Development",
     description: "Fast, modern sites built for conversion and scale.",
   },
   {
-    icon: Bot,
-    title: "AI automation",
-    description: "Custom workflows that remove manual work from operations.",
-  },
-  {
-    icon: BarChart3,
-    title: "Data analytics",
-    description: "Dashboards and pipelines that turn raw data into decisions.",
+    icon: Gauge,
+    title: "Performance & SEO",
+    description:
+      "Speed, structure and metadata tuned so the right people find you.",
   },
 ];
 
 export const navLinks = [
   { label: "Services", href: "#services" },
   { label: "Work", href: "#work" },
-  { label: "About", href: "#about" },
   { label: "Contact", href: "#contact" },
 ];
 
-export const stats = [
-  { value: "40+", label: "Projects shipped" },
-  { value: "12", label: "Industries served" },
-  { value: "92%", label: "Client retention" },
-  { value: "3 wks", label: "Avg. time to launch" },
+export type Stat = {
+  value: string;
+  label: string;
+  detail: string;
+};
+
+export const stats: Stat[] = [
+  {
+    value: "4+",
+    label: "Projects shipped",
+    detail: "Client sites designed, built and launched end to end.",
+  },
+  {
+    value: "3+",
+    label: "Industries served",
+    detail: "From industrial contracting to direct-to-consumer retail.",
+  },
+  {
+    value: "1 day",
+    label: "Typical reply time",
+    detail: "Every enquiry answered within one business day.",
+  },
 ];
 
 export type WorkItem = {

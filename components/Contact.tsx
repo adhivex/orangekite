@@ -44,8 +44,8 @@ export default function Contact() {
               Have a project in mind?
             </h2>
             <p className="mt-4 text-fg/80">
-              Whether it&rsquo;s a new site, an automation idea, or a data
-              problem you can&rsquo;t see through — tell us about it.
+              Whether it&rsquo;s a brand-new site or a rebuild of one
+              you&rsquo;ve outgrown — tell us about it.
             </p>
 
             <div className="mt-8 flex flex-col gap-4">

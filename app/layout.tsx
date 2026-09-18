@@ -8,18 +8,17 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: "OrangeKite",
   description:
-    "OrangeKite builds fast websites, custom AI automation, and data analytics that help modern teams launch faster and make better decisions.",
+    "OrangeKite designs and builds fast, modern websites that help teams launch faster and convert better.",
   keywords: [
     "OrangeKite",
     "website design and development",
-    "AI automation",
-    "data analytics",
-    "software studio",
+    "web design studio",
+    "custom websites",
   ],
   openGraph: {
-    title: "OrangeKite — Websites, AI automation & data analytics",
+    title: "OrangeKite — Website design & development",
     description:
-      "OrangeKite builds fast websites, custom AI automation, and data analytics that help modern teams launch faster and make better decisions.",
+      "OrangeKite designs and builds fast, modern websites that help teams launch faster and convert better.",
     url: siteUrl,
     siteName: "OrangeKite",
     images: [
@@ -35,9 +34,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "OrangeKite — Websites, AI automation & data analytics",
+    title: "OrangeKite — Website design & development",
     description:
-      "OrangeKite builds fast websites, custom AI automation, and data analytics that help modern teams launch faster and make better decisions.",
+      "OrangeKite designs and builds fast, modern websites that help teams launch faster and convert better.",
     images: ["/assets/orangekite-logo_updated.svg.png"],
   },
   icons: {

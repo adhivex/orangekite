@@ -55,9 +55,9 @@ export default function Nav() {
         <div className="hidden md:block">
           <a
             href="#contact"
-            className="inline-flex items-center rounded-md bg-orange px-4 py-2.5 text-sm font-medium text-white transition-opacity hover:opacity-90"
+            className="inline-flex items-center rounded-md border border-orange/50 px-4 py-2 text-sm font-medium text-orange transition-colors hover:border-orange hover:bg-orange-dim"
           >
-            Get Started
+            Let&rsquo;s Talk
           </a>
         </div>
 
@@ -106,9 +106,9 @@ export default function Nav() {
               <a
                 href="#contact"
                 onClick={() => setOpen(false)}
-                className="inline-flex w-full items-center justify-center rounded-md bg-orange px-4 py-3 text-sm font-medium text-white"
+                className="inline-flex w-full items-center justify-center rounded-md border border-orange/50 px-4 py-3 text-sm font-medium text-orange"
               >
-                Get Started
+                Let&rsquo;s Talk
               </a>
             </li>
           </ul>
