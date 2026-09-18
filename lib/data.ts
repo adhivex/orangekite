@@ -27,9 +27,9 @@ export const services: Service[] = [
 ];
 
 export const navLinks = [
-  { label: "Services", href: "#services" },
-  { label: "Work", href: "#work" },
-  { label: "Contact", href: "#contact" },
+  { label: "Services", href: "/#services" },
+  { label: "Work", href: "/#work" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 export type Stat = {
@@ -93,11 +93,11 @@ export const workItems: WorkItem[] = [
   },
   {
     tag: "In progress",
-    title: "More work coming soon",
+    title: "RCS Logistics",
     result:
-      "The next build is underway. Want your site in this slot? Start a project with us.",
+      "Logistics site in build — road freight, project cargo and custom supply-chain services.",
     href: "",
-    tags: [],
+    tags: ["Corporate site", "Launching soon"],
     image: "/assets/work/rcs-logistics.jpg",
     imageAlt: "RCS Logistics website, in progress",
     comingSoon: true,

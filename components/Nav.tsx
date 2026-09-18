@@ -24,7 +24,7 @@ export default function Nav() {
       }`}
     >
       <nav className="section-x flex h-16 items-center justify-between sm:h-20">
-        <a href="#" className="flex items-center gap-0.5" aria-label="OrangeKite home">
+        <a href="/" className="flex items-center gap-0.5" aria-label="OrangeKite home">
           <Image
             src="/assets/orangekite-icon_updated.svg.png"
             alt=""
@@ -54,7 +54,7 @@ export default function Nav() {
 
         <div className="hidden md:block">
           <a
-            href="#contact"
+            href="/#contact"
             className="inline-flex items-center rounded-md border border-orange/50 px-4 py-2 text-sm font-medium text-orange transition-colors hover:border-orange hover:bg-orange-dim"
           >
             Let&rsquo;s Talk
@@ -104,7 +104,7 @@ export default function Nav() {
             ))}
             <li className="pt-2">
               <a
-                href="#contact"
+                href="/#contact"
                 onClick={() => setOpen(false)}
                 className="inline-flex w-full items-center justify-center rounded-md border border-orange/50 px-4 py-3 text-sm font-medium text-orange"
               >
