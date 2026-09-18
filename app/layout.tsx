@@ -3,6 +3,11 @@ import { GeistSans } from "geist/font/sans";
 import "./globals.css";
 
 const siteUrl = "https://orangekite.in";
+// Absolute, not relative: WhatsApp and other chat crawlers will not resolve a
+// path-only og:image against the page URL.
+const ogImage = `${siteUrl}/og-image.jpg`;
+const ogDescription =
+  "OrangeKite designs and builds fast, modern websites — from corporate sites to direct-to-consumer storefronts. Crafted, not templated.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -16,17 +21,17 @@ export const metadata: Metadata = {
     "custom websites",
   ],
   openGraph: {
-    title: "OrangeKite — Website design & development",
-    description:
-      "OrangeKite designs and builds fast, modern websites that help teams launch faster and convert better.",
-    url: siteUrl,
+    title: "OrangeKite — Websites crafted, not templated",
+    description: ogDescription,
+    url: `${siteUrl}/`,
     siteName: "OrangeKite",
     images: [
       {
-        url: "/assets/orangekite-logo_updated.svg.png",
+        url: ogImage,
         width: 1200,
         height: 630,
-        alt: "OrangeKite",
+        type: "image/jpeg",
+        alt: "OrangeKite — websites crafted, not templated",
       },
     ],
     locale: "en_US",
@@ -34,10 +39,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "OrangeKite — Website design & development",
-    description:
-      "OrangeKite designs and builds fast, modern websites that help teams launch faster and convert better.",
-    images: ["/assets/orangekite-logo_updated.svg.png"],
+    title: "OrangeKite — Websites crafted, not templated",
+    description: ogDescription,
+    images: [ogImage],
   },
   icons: {
     icon: "/assets/orangekite-icon_updated.svg.png",
