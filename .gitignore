@@ -23,3 +23,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# design sources (full-res screenshots; optimized copies live in public/assets/work)
+/design-sources/

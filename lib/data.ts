@@ -61,6 +61,13 @@ export type WorkItem = {
   title: string;
   result: string;
   href: string;
+  /** Short context pills shown under the description. */
+  tags: string[];
+  /** Screenshot in /public/assets/work. Omit and the card shows the placeholder box. */
+  image?: string;
+  imageAlt?: string;
+  /** Renders the dashed, non-clickable "coming soon" variant instead of a project. */
+  comingSoon?: boolean;
 };
 
 export const workItems: WorkItem[] = [
@@ -68,14 +75,31 @@ export const workItems: WorkItem[] = [
     tag: "Website design & development",
     title: "Sai Jagannath Engineering & Construction",
     result:
-      "Corporate site for an industrial electrical and instrumentation contractor, with a filterable portfolio of cement, steel and pellet plant projects.",
+      "Corporate site for an industrial contractor, with a filterable portfolio of plant projects.",
     href: "https://sjec.in",
+    tags: ["Corporate site", "Portfolio filtering"],
+    image: "/assets/work/sjec.jpg",
+    imageAlt: "SJEC website homepage",
   },
   {
     tag: "Website design & development",
     title: "Routray Naturals",
     result:
-      "Direct-to-consumer storefront for dry fruits and whole spices, with a product catalogue, cart and a separate bulk and wholesale channel.",
+      "Storefront for dry fruits and whole spices, with a catalogue, cart and bulk channel.",
     href: "https://routraynaturals.in",
+    tags: ["E-commerce", "D2C"],
+    image: "/assets/work/routray-naturals.jpg",
+    imageAlt: "Routray Naturals website homepage",
+  },
+  {
+    tag: "In progress",
+    title: "More work coming soon",
+    result:
+      "The next build is underway. Want your site in this slot? Start a project with us.",
+    href: "",
+    tags: [],
+    image: "/assets/work/rcs-logistics.jpg",
+    imageAlt: "RCS Logistics website, in progress",
+    comingSoon: true,
   },
 ];
