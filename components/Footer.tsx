@@ -18,9 +18,9 @@ const companyLinks = [
 export default function Footer() {
   return (
     <footer className="border-t border-border">
-      <div className="section-x grid grid-cols-1 gap-12 py-16 md:grid-cols-2 md:gap-x-10 md:gap-y-14 lg:py-20 xl:grid-cols-[1.4fr_1fr_1fr_1.9fr] xl:gap-x-12">
-        {/* Brand */}
-        <div className="flex flex-col gap-5">
+      <div className="section-x grid grid-cols-2 gap-x-6 gap-y-10 py-14 md:gap-x-10 md:gap-y-14 md:py-16 lg:py-20 xl:grid-cols-[1.4fr_1fr_1fr_1.9fr] xl:gap-x-12">
+        {/* Brand — full width until the columns have room to sit beside it. */}
+        <div className="col-span-2 flex flex-col gap-5 md:col-span-1">
           <a href="/" className="flex items-center gap-0.5" aria-label="OrangeKite home">
             <Image
               src="/assets/orangekite-icon_updated.svg.png"
@@ -59,12 +59,12 @@ export default function Footer() {
           >
             Services
           </h2>
-          <ul className="mt-5 flex flex-col gap-1 sm:gap-3">
+          <ul className="mt-4 flex flex-col md:mt-5 md:gap-1">
             {services.map((service) => (
               <li key={service.title}>
                 <a
                   href="/#services"
-                  className="flex min-h-11 items-center text-sm text-muted transition-colors hover:text-fg sm:min-h-0"
+                  className="flex min-h-11 items-center text-sm text-muted transition-colors hover:text-fg md:min-h-0 md:py-1"
                 >
                   {service.title}
                 </a>
@@ -81,12 +81,12 @@ export default function Footer() {
           >
             Company
           </h2>
-          <ul className="mt-5 flex flex-col gap-1 sm:gap-3">
+          <ul className="mt-4 flex flex-col md:mt-5 md:gap-1">
             {companyLinks.map((link) => (
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className="flex min-h-11 items-center text-sm text-muted transition-colors hover:text-fg sm:min-h-0"
+                  className="flex min-h-11 items-center text-sm text-muted transition-colors hover:text-fg md:min-h-0 md:py-1"
                 >
                   {link.label}
                 </a>
@@ -97,7 +97,7 @@ export default function Footer() {
 
         {/* Orange Setu — a secondary mention, set off by a hairline rule. The
             whole lockup is the link; kept small and out of the main nav. */}
-        <div className="border-t border-border pt-8 md:border-l md:border-t-0 md:pl-8 md:pt-0 xl:pl-8">
+        <div className="col-span-2 border-t border-border pt-8 md:col-span-1 md:border-l md:border-t-0 md:pl-8 md:pt-0 xl:pl-8">
           <a
             href="https://orangesetu.org/"
             target="_blank"
@@ -123,7 +123,7 @@ export default function Footer() {
               size={16}
               strokeWidth={1.75}
               aria-hidden="true"
-              className="ml-auto shrink-0 text-muted transition-all group-hover:translate-x-0.5 group-hover:text-fg"
+              className="ml-3 shrink-0 text-muted transition-all group-hover:translate-x-0.5 group-hover:text-fg md:ml-auto"
             />
           </a>
         </div>
