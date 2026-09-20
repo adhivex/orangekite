@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <!-- Generated from public/orangesetu-logo.svg. Symbol only, optically
+       centred in a square with 20 units of padding:
+       scale 216/226 = 0.956, then offset so the symbol's bounds
+       (x 42-268, y 45-184) sit centred at 128,128. -->
+  <!-- Transparent ground: this copy is for placing on any surface. The
+       favicon at app/icon.svg carries a charcoal square instead. -->
+  <g transform="translate(-20.14 18.56) scale(0.956)">
+    <g fill="none" stroke="#F97316" stroke-width="20" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M52 143 Q155 78 258 143"/>
+      <path d="M82 143 V174"/>
+      <path d="M155 121 V174"/>
+      <path d="M228 143 V174"/>
+    </g>
+    <g fill="#F97316">
+      <circle cx="82" cy="88" r="11"/>
+      <circle cx="155" cy="60" r="15"/>
+      <circle cx="228" cy="88" r="11"/>
+    </g>
+  </g>
+</svg>
