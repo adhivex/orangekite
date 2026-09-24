@@ -16,7 +16,7 @@ export default function Hero() {
       <div className="section-x relative py-24 sm:py-32 lg:py-40">
         <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
           <h1 className="text-4xl font-extrabold leading-[1.05] tracking-tighter text-fg sm:text-5xl md:text-[3.5rem] lg:text-6xl">
-            Websites crafted,
+            Web Apps crafted,
             <br />
             <span className="text-orange">not templated.</span>
           </h1>
