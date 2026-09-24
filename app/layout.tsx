@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     "custom websites",
   ],
   openGraph: {
-    title: "OrangeKite — Websites crafted, not templated",
+    title: "OrangeKite — Crafted, not templated",
     description: ogDescription,
     url: `${siteUrl}/`,
     siteName: "OrangeKite",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "OrangeKite — Websites crafted, not templated",
+    title: "OrangeKite — Crafted, not templated",
     description: ogDescription,
     images: [ogImage],
   },
