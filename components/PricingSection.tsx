@@ -36,7 +36,7 @@ const plans: Plan[] = [
   {
     name: "Get Online",
     icon: <Spark />,
-    monthly: 299,
+    monthly: 799,
     chips: ["Hosting included", "SSL secured"],
     features: [
       "Professional website",
@@ -53,7 +53,7 @@ const plans: Plan[] = [
   {
     name: "Grow Online",
     icon: <Rocket />,
-    monthly: 499,
+    monthly: 999,
     chips: ["Cloud database", "Business email"],
     intro: "Everything in Get Online, plus:",
     features: [

@@ -6,7 +6,7 @@ import PageCTA from "@/components/PageCTA";
 import { pricingValues } from "@/lib/pricing";
 
 const description =
-  "Simple pricing for a complete digital presence — a professionally designed website with hosting, security, updates and support, from ₹299/month.";
+  "Simple pricing for a complete digital presence — a professionally designed website with hosting, security, updates and support, from ₹799/month.";
 
 export const metadata: Metadata = {
   title: "Pricing — OrangeKite",
