@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
-import PricingCard from "@/components/PricingCard";
+import PricingSection from "@/components/PricingSection";
 import PageCTA from "@/components/PageCTA";
-import { plans, pricingNote, pricingValues } from "@/lib/pricing";
+import { pricingValues } from "@/lib/pricing";
 
 const description =
   "Simple pricing for a complete digital presence — a professionally designed website with hosting, security, updates and support, from ₹299/month.";
@@ -43,30 +43,9 @@ export default function PricingPage() {
     <>
       <Nav />
       <main>
-        <section className="section-x pb-20 pt-12 sm:pb-28 sm:pt-16">
-          <div className="mx-auto flex max-w-2xl flex-col items-center text-center">
-            <p className="text-sm font-medium uppercase tracking-tight text-orange">
-              Pricing
-            </p>
-            <h1 className="mt-4 text-balance text-4xl font-extrabold leading-[1.05] tracking-tighter text-fg sm:text-5xl">
-              Simple pricing. Complete digital presence.
-            </h1>
-            <p className="mt-6 text-balance text-base leading-relaxed text-muted sm:text-lg">
-              Get a professionally designed website with the technology,
-              support and care your business needs — all in one place.
-            </p>
-          </div>
-
-          <div className="mx-auto mt-12 grid max-w-xl grid-cols-1 gap-5 lg:max-w-4xl lg:grid-cols-2">
-            {plans.map((plan) => (
-              <PricingCard key={plan.name} plan={plan} />
-            ))}
-          </div>
-
-          <p className="mx-auto mt-8 max-w-4xl text-center text-sm text-muted">
-            {pricingNote}
-          </p>
-        </section>
+        {/* No visible page heading, so both plans fit on a laptop screen. */}
+        <h1 className="sr-only">Pricing</h1>
+        <PricingSection />
 
         <section className="border-y border-border bg-bg-elevated">
           <div className="section-x py-20 sm:py-28">
