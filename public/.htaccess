@@ -1,0 +1,6 @@
+# Serve the static export's extensionless routes (e.g. /pricing -> pricing.html).
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html [L]
